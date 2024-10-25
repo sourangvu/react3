@@ -13,6 +13,7 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
   let App = () => {
@@ -112,8 +113,8 @@ import Card from 'react-bootstrap/Card';
         <Card.Title style={{maxHeight:"20px",overflow:'hidden'}}>{product.title}</Card.Title>
         <Card.Text style={{maxHeight:"78px",overflow:'hidden'}}>{product.description}</Card.Text>
         <Card.Text style={{maxHeight:"78px",overflow:'hidden'}}>${product.price}</Card.Text>
-        <a href={`product-details/${product.id}`}>
-          <Button className='mx-1' variant="primary">View product</Button></a>
+        <Link> to={`product-details/${product.id}`}
+          <Button className='mx-1' variant="primary">View product</Button></Link>
         <Button variant="warning"> Buy Now</Button>
       </Card.Body>
       </Card>
