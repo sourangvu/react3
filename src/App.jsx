@@ -113,7 +113,7 @@ import { Link } from 'react-router-dom';
         <Card.Title style={{maxHeight:"20px",overflow:'hidden'}}>{product.title}</Card.Title>
         <Card.Text style={{maxHeight:"78px",overflow:'hidden'}}>{product.description}</Card.Text>
         <Card.Text style={{maxHeight:"78px",overflow:'hidden'}}>${product.price}</Card.Text>
-        <Link> to={`product-details/${product.id}`}
+        <Link to={`product-details/${product.id}`}>
           <Button className='mx-1' variant="primary">View product</Button></Link>
         <Button variant="warning"> Buy Now</Button>
       </Card.Body>
